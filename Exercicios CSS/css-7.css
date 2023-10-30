@@ -1,0 +1,13 @@
+body{margin:0 auto;
+width:90%;}
+
+.container {
+    border: 8px solid blue;
+    padding:10%;
+    margin:10%;
+    background-image:url(https://www.w3resource.com/images/w3resource-logo.png);
+    background-repeat:no-repeat;
+    background-position: center center;
+    text-align:center;
+
+}
