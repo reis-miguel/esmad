@@ -1,0 +1,9 @@
+.son{
+    margin:10px 10px 10px 10px;
+    border:8px solid red;
+    padding:25px;
+}
+
+.parent{
+    background-color: rgba(17, 249, 17, 0.859);
+}

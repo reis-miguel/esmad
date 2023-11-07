@@ -1,0 +1,26 @@
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:stretch;
+    height: 400px;
+}
+.item{
+    /* height: 100px; */
+    width:200px;
+}
+.item-1{
+    background-color: blue;
+}
+.item-2{
+    background-color: rgba(255, 13, 0, 0.612);
+}
+.item-3{
+    background-color: rgb(212, 170, 19);
+}
+.item-4{
+    background-color: rgb(255, 0, 119);
+}
+.item-5{
+    background-color: rgb(22, 22, 78);
+}
