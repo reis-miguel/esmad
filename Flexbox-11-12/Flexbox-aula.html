@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Poppins:wght@500;900&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            margin:0 auto;
+            box-sizing: border-box;
+            /* border:2px solid mistyrose; */
+        }
+        img{
+            max-width: 100%;
+        }
+
+        .container{
+            display:flex;
+            width:100%;
+            justify-content:space-between;
+            max-width: 900px;
+            margin:0 auto;
+            padding:50px 0;
+            flex-wrap: wrap;
+
+
+        }
+        .menu{
+            display:flex;
+            justify-content:space-between;
+        }
+
+        h1, h2, h3, p {
+            margin:0;
+        }
+
+        h1,h2, h3, h4, h5{
+            font-family: 'Poppins';
+            font-weight: 900;
+            font-size: 3rem;
+        }
+
+        p{
+            font-family: 'garamond';
+            font-size:1.3rem ;
+        }
+
+        header, footer{
+            background: lightcoral;
+        }
+
+        .logo, .header_tittle, nav {
+            width: 30%;
+            align-self:center;
+        }
+ 
+        .menu>li{
+            display:inline;
+            margin:0px;
+            /* align-items: flex-end; */
+        }
+
+        ul{
+            /* background-color: green; */
+            margin:0px;
+        }
+
+        .row{
+            display:flex;
+            width:100%;
+            justify-content:space-between;
+            align-items: center;
+        }
+        .content{
+            background: lightgray;
+        }
+
+        .column1{
+            /* background: magenta; */
+            /* align-self: flex-end; */
+            max-width: 30%;
+        }
+        
+        .column2{
+            width:50%;
+            margin-left:3em;
+        }
+
+        .logo {
+            align-self:end ;
+        }
+
+        .content .container{
+            align-items: flex-end;
+            /* background: red; */
+        }
+        .contact>p{
+            display:inline ;
+        }
+        .contact>p:nth-child(1){
+            margin-right: 2em;
+        }
+        .noticia{
+            margin-bottom: 2em;
+            padding:2em;
+            border: 2px solid grey;
+            box-shadow:0em ;
+        }
+    
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo"><h1>LOGO</h1></div>
+            <div class="header_title"><h1>Tech Insights</h1></div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Tendências</a></li>
+                    <li><a href="#">Análises</a></li>
+                    <li><a href="#">Dicas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="column column1"><img src="https://wonderfulengineering.com/wp-content/uploads/2014/10/image-wallpaper-15-1024x768.jpg" alt="Pássaro">
+                    <h2>Título da imagem</h2>
+                    <p>Descrição da Imagem</p>
+                </div>
+                <div class="column column2">
+                    <div class="noticia">
+                        <h2>Notícia 1</h2>
+                        <p>Suspendisse finibus suscipit erat a laoreet. Praesent cursus, neque mattis porttitor mollis, nunc nulla facilisis nisl, ac tempus massa felis sed lorem. Donec ultrices justo dapibus, venenatis ipsum ac, elementum ipsum. Aenean a odio vestibulum sapien dapibus cursus. Curabitur viverra sed nisi non vestibulum. Cras vitae justo et elit sagittis placerat blandit eu velit. Ut congue sem lobortis sem facilisis, non interdum velit suscipit. Donec faucibus id lectus ut iaculis. Aliquam in dui leo.</p>
+                    </div>
+                    <div class="noticia">
+                        <h2>Notícia 2</h2>
+                        <p>Suspendisse finibus suscipit erat a laoreet. Praesent cursus, neque mattis porttitor mollis, nunc nulla facilisis nisl, ac tempus massa felis sed lorem. Donec ultrices justo dapibus, venenatis ipsum ac, elementum ipsum. Aenean a odio vestibulum sapien dapibus cursus. Curabitur viverra sed nisi non vestibulum. Cras vitae justo et elit sagittis placerat blandit eu velit. Ut congue sem lobortis sem facilisis, non interdum velit suscipit. Donec faucibus id lectus ut iaculis. Aliquam in dui leo.</p>
+                    </div>
+                    <div class="noticia">
+                        <h2>Notícia 3</h2>
+                        <p>Suspendisse finibus suscipit erat a laoreet. Praesent cursus, neque mattis porttitor mollis, nunc nulla facilisis nisl, ac tempus massa felis sed lorem. Donec ultrices justo dapibus, venenatis ipsum ac, elementum ipsum. Aenean a odio vestibulum sapien dapibus cursus. Curabitur viverra sed nisi non vestibulum. Cras vitae justo et elit sagittis placerat blandit eu velit. Ut congue sem lobortis sem facilisis, non interdum velit suscipit. Donec faucibus id lectus ut iaculis. Aliquam in dui leo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="contact">
+                <p>Email@email.com</p>
+                <p>1123456789</p>
+            </div>
+            <div class="social">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">youtube</a>
+            </div>
+        </div>
+        
+    
+    </footer>
+    
+</body>
+</html>
